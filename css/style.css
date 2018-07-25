@@ -1,0 +1,112 @@
+*{
+	box-sizing: border-box; 
+	/* This makes the widths of elements more consistent
+		Full details here https://css-tricks.com/box-sizing/ */
+}
+
+body{
+	margin: 0px; /* Often browsers have a 5px margin by deafult*/
+	font-family: sans-serif;
+	background-color: linen;
+	}
+
+section{
+	max-width: 100%;
+	margin-left: 180px;
+	margin-right: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+section p, section h1{
+max-width: 60%;
+margin-left: 40px;
+}
+
+.sidenav {
+	height:  100%;
+	width: 160px;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: indigo;
+	overflow-x: hidden;
+	padding-top: 20px;
+	border-style: none solid none none;
+	border-width: 10px;
+	border-color: #34005B;
+}
+
+.sidenav a {
+	padding: 6px 8px 6px 16px;
+	text-decoration: none; 
+	color: coral;
+
+	font-size: 20px;
+	display: : block;
+	/*line-height: 200%;*/
+
+}
+
+.sidenav a:hover{
+	color: linen;
+	background-color: RebeccaPurple;
+}
+
+.topHeader {
+    background-color: coral;
+	color: white; /* more readable on an orange background */
+  	padding-top: 50px;
+	padding-bottom: 50px;
+
+
+}
+
+.topHeader p, .topHeader h1{
+	max-width: 1000px;
+	margin-left: 180px;
+	margin-right: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	text-align: center;
+
+
+}
+
+.categoryHeader{
+ 	background-color: teal;
+	color: linen; /* more readable on an orange background */
+ 	padding-top: 10px;
+	padding-bottom: 10px;
+	border-radius: 0px 0px 50px 0px
+
+}
+
+/* Simple grid */
+.g-row{
+	width: 100%;
+	overflow: hidden;
+}
+
+.g-row img{
+	width: 100%; /*This makes all images in grids to be the size of their cell */
+	border-radius: 10px;
+}
+
+.g-30{
+	width: 30%;
+	float: left;
+	margin: 20px;
+
+}
+
+
+.show{
+	border: 1px solid blue;
+	padding: 2px;
+}
+
+.padded{
+	padding: 20px; /* I add this to cells to add a little padding*/
+}
